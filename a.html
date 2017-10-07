@@ -1,0 +1,18 @@
+<!doctype html>
+<script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
+123 
+<video src='/test2.mp4' controls width="320" height="200" preload='auto' autoplay></video>
+1234
+<video controls="controls" preload="auto" width="683px" height="384px">
+    <source src="/test2.mp4 " type="video/mp4">
+    <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="100%" height="100%">
+        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+        <param name="allowFullScreen" value="true">
+        <param name="wmode" value="transparent">
+        <param name="flashVars" value="config={'playlist':['',{'url':'http://www.wolaizuo.com/b.mp4','autoPlay':true}]}">
+        <img alt="Big Buck Bunny" src="#" width="683px" height="384px" title="No video playback capabilities, please download the video below">
+    </object>
+<video>
+<script>
+    Array.from(document.querySelectorAll("video")).forEach(x => x.load());
+</script>
